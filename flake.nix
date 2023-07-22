@@ -2,6 +2,7 @@
   description = "Minigui - A minimal window manager based GUI.";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    picom-fork = "github:ibhagwan/picom";
   };
   outputs = { self, nixpkgs }: {
     nixosConfigurations.Minigui = nixpkgs.lib.nixosSystem {
@@ -18,7 +19,7 @@
           services.xserver.windowManager.bspwm.enable = true;
 
           # Enable picom compositor for window effects
-          services.picom.enable = true;
+          picom.enable = true; # Change to use picom fork
 
           # Packages go here. there really shouldn't be much here, the goal is to only have near universal needs.
           environment.systemPackages = with pkgs; [
