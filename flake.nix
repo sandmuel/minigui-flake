@@ -19,6 +19,11 @@
 
           # Enable picom compositor for window effects
           services.picom.enable = true;
+
+          # Packages go here
+          environment.systemPackages = with pkgs; [
+            alacritty
+            #(import "${self}/my-settings-app.nix")
         }
       ];
     };
