@@ -23,6 +23,7 @@
           # Packages go here
           environment.systemPackages = with pkgs; [
             alacritty
+            polybar
             #(import "${self}/my-settings-app.nix")
         }
       ];
