@@ -12,7 +12,7 @@
           services.xserver.enable = true;
 
           # Enable the display manager
-          services.xserver.displayManager.lightdm.enable = true;
+          services.xserver.displayManager.sddm.enable = true; # Change to lightdm when the bug is fixed
 
           # Enable the window manager
           services.xserver.windowManager.bspwm.enable = true;
