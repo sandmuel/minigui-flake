@@ -20,7 +20,7 @@
           # Enable picom compositor for window effects
           services.picom.enable = true;
 
-          # Packages go here
+          # Packages go here. there really shouldn't be much here, the goal is to only have near universal needs.
           environment.systemPackages = with pkgs; [
             alacritty
             polybar
