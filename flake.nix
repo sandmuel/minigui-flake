@@ -24,6 +24,7 @@
           environment.systemPackages = with pkgs; [
             alacritty
             polybar
+            rofi
             #(import "${self}/my-settings-app.nix")
         }
       ];
