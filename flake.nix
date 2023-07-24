@@ -26,7 +26,6 @@
             alacritty
             polybar
             rofi
-            #(import "${self}/my-settings-app.nix")
         }
       ];
     };
