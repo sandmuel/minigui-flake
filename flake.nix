@@ -1,11 +1,9 @@
+{ config, lib, pkgs, ... }:
 {
   description = "Minigui - A minimal window manager based GUI.";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs"
-  };
-
-  outputs = { self, nixpkgs }: {
-    # Do stuff
-  };
+  services.xserver = {
+  enable = true;
+  windowManager.bspwm.enable = true;
+  displayManager.defaultSession = "none+bspwm";
 }
