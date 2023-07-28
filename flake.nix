@@ -7,7 +7,7 @@
   };
 
   # Define flake outputs
-  outputs = { self, nixpkgs, services }: 
+  outputs = { self, nixpkgs }: 
   {
 
     ###################
