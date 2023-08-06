@@ -1,6 +1,6 @@
 {
 
-  description = "A minimal desktop environment."
+  description = "A minimal desktop environment.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
