@@ -15,11 +15,9 @@
       config = { allowUnfree = true; };
     };
 
-    lib = nixpkgs.lib;
-
   in {
     nixosConfigurations = {
-      hostname = lib.nixosSystem {
+      hostname = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ /etc/nixos/configuration.nix ];
       };
