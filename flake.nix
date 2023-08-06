@@ -16,7 +16,7 @@
     };
   in {
     nixosConfigurations = {
-      hostname = nixpkgs.lib.nixosSystem {
+      nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ ./nixos/configuration.nix ];
       };
