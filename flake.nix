@@ -1,4 +1,5 @@
 {
+
   description = "A minimal desktop environment."
 
   inputs = {
