@@ -14,7 +14,6 @@
       inherit system;
       config = { allowUnfree = true; };
     };
-
   in {
     nixosConfigurations = {
       hostname = nixpkgs.lib.nixosSystem {
